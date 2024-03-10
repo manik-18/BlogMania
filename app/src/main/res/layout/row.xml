@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp">
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user" />
+
+        <!-- Username -->
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/profileImage"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:text="Manik Gupta"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:contentDescription="home page image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/profileImage"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView3"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:maxLines="3"
+            android:text="Master Your Skill With Fun And Learn Very Fundamentals..."
+            android:textColor="@color/blue"
+            android:textSize="16sp" />
+
+        <!-- Separator Line -->
+        <View
+            android:id="@+id/separator2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@id/textView9"/>
+
+        <!-- Date (moved to the right side) -->
+        <TextView
+            android:id="@+id/t_date"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/profileImage"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            android:text="03-12-23"
+            android:background="@color/red"
+            android:padding="2dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
